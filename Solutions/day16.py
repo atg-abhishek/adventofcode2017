@@ -72,7 +72,7 @@ def part2():
         else:
             d1[res] = idx
         idx+=1
-    req_idx = (1000000000%idx) - 1
+    req_idx = (1000000000%idx) - 1 #the off by one index worked, it's the beginning of the unfinished cycle 
     pprint(req_idx)
     for k,v in d1.items():
         if v == req_idx:
